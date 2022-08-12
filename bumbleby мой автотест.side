@@ -1,0 +1,77 @@
+{
+  "id": "284e6ffd-42c9-4c26-b735-bac5e2a68b4a",
+  "version": "2.0",
+  "name": "bumbleby",
+  "url": "https://qa.neapro.site/login/",
+  "tests": [{
+    "id": "4c957330-9347-4853-986f-64037d4ecdee",
+    "name": "Login",
+    "commands": [{
+      "id": "2b830c9a-4e5e-40b7-a205-6cdda2f38f28",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5390410-b006-46f0-a715-97aa94ab2a45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fieldset:nth-child(1) input",
+      "targets": [
+        ["css=.fieldset:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4fbd8fb-57bd-4f04-bc88-38aff6ea4140",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(1) input",
+      "targets": [
+        ["css=.fieldset:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "night.manager00@gmail.com"
+    }, {
+      "id": "a13a6599-d492-4f47-a305-2c79b362c3e8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.fieldset:nth-child(2) input",
+      "targets": [
+        ["css=.fieldset:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "AndreyKA2309"
+    }, {
+      "id": "a1395da1-80c2-4c7d-b7da-f7d2b402f57c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/section/div[2]/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подтвердить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cc1db46b-98ef-4069-94c1-d8056ae37ec8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4c957330-9347-4853-986f-64037d4ecdee"]
+  }],
+  "urls": ["https://qa.neapro.site/login/", "https://qa.neapro.site/cabinet/documents"],
+  "plugins": []
+}
